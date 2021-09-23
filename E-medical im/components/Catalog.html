@@ -1,0 +1,89 @@
+<html>
+<head>
+<script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+  <div>
+    <header class="major">
+			<h2>Catalog</h2>
+	</header>
+	<p>
+      We’re on a quest to find the most nutrient rich ingredients the world has to offer, <br />
+      to help you get the most out of every day.
+      <ul class="actions">
+				<li><a href="#" class="button big">Learn More</a></li>
+			</ul>
+    </p>
+    <ul>
+      <li><a>Allergy and immunology</a></li>
+			<li><a>Anesthesiology</a></li>
+			<li><a>Dermatology</a></li>
+			<li><a>Diagnostic radiology</a></li>
+			<li><a>Emergency medicine</a></li>
+			<li><a>Family medicine</a></li>
+    </ul>
+    
+
+  </div>
+<script>
+import '../css/main.css'
+export default {
+  name: 'catalog',
+  props: {
+    msg: String
+  }
+}
+
+const HelloVueApp = {
+  data() {
+    return {
+      message: 'String!!'
+    }
+  }
+}
+Vue.createApp(HelloVueApp).mount('#hello-vue')
+</script>
+
+</body>
+</html>
+
+
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+
+
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+li {
+  /* display: inline-block; */
+  text-align: left;
+  margin: 0 0 0 45%;
+}
+
+
+ul.actions {
+  display: flex;
+  cursor: default;
+  margin: 0 auto;
+  list-style-type: none;
+}
+ul.actions li {
+  padding: 0 0 0 1em;
+  vertical-align: middle; 
+  margin: 0 auto;
+}
+
+header.major > :last-child {
+  border-bottom: solid 3px #f56a6a;
+  display: inline-block;
+  margin: 5% 0 2em 0;
+  padding: 0 0.75em 0.5em 0; 
+}
+</style>
